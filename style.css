@@ -84,6 +84,11 @@ margin-bottom: 16px;
 resize: vertical;
 }
 
+textarea {
+  width: 200px;
+  height: 160px;
+}
+
 input[type=submit] {
 background-color: #b90606;
 color: rgb(242, 243, 242);
