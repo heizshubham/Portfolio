@@ -110,19 +110,32 @@
     <h3>Get in Touch / Feedback</h3>
 
 <div class="container">
-  <form action="/action_page.php">
+  <!-- <form action="/action_page.php"> -->
+  <!-- Update the form tag in index.html -->
+  <form id="contactForm" action="https://formspree.io/f/xwkdjqpq" method="POST">
+    <!-- existing form fields -->
+  
     <label for="name"><h4>Name</h4></label>
-    <input type="text" id="name" placeholder="Your name.."style="width:180px">
+    <input type="text" class="form-control" id="name" name="name" placeholder="Your name.."style="width:180px">
 
     <label for="Email Address"><h4>Email Address</h4></label>
-    <input type="text" id="Email Address" Email Address="Email Address" placeholder="Email Address"style="width:180px">
+    <input type="text" class="form-control" name="Email Address" id="Email Address" Email Address="Email Address" placeholder="Email Address"style="width:180px">
 
     <label for="subject"><h4>Message</h4></label>
-    <textarea id="subject" placeholder="Write something.." style="height:160px"></textarea>
+    <textarea id="subject" class="form-control" id="message" name="message" placeholder="Write something.." style="height:160px"></textarea>
      <br>
     <input type="submit" value="Submit">
   </form>
+
 </div>
+
+  <div id="successMessage" class="mt-3" style="display: none; color: green;">
+    submitted successfully!
+  </div>
+    </section>
+
+<!-- <button type="submit" class="btn btn-primary">Submit</button> --> 
+
 
 <section>
     <!-- Add icon library -->
